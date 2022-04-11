@@ -1,7 +1,6 @@
 package ru.job4j;
 
 public class StudentInfo {
-     @SuppressWarnings("checkstyle:WhitespaceAround")
      public static void main(String[] args) {
          System.out.println("Daniil Seredin");
          System.out.println("24.01.2000");
