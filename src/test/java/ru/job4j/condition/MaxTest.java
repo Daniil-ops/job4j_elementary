@@ -20,7 +20,7 @@ public class MaxTest {
 
     @Test
     public void whenMax2To2Then2() {
-        int result = Max.max(2,2);
+        int result = Max.max(2, 2);
         int expected = 2;
         Assert.assertEquals(result, expected);
     }
