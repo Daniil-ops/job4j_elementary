@@ -2,22 +2,22 @@ package ru.job4j.condition;
 
 public class DummyBot {
     public static String answer(String question) {
-        String rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
-        if ("Привет, Бот.".equals(question)) {
-            rsl = "Привет, умник.";
+        String rsl = "Р­С‚Рѕ СЃС‚Р°РІРёС‚ РјРµРЅСЏ РІ С‚СѓРїРёРє. Р—Р°РґР°Р№С‚Рµ РґСЂСѓРіРѕР№ РІРѕРїСЂРѕСЃ.";
+        if ("РџСЂРёРІРµС‚, Р‘РѕС‚.".equals(question)) {
+            rsl = "РџСЂРёРІРµС‚, СѓРјРЅРёРє.";
         }
-        if ("Пока.".equals(question)) {
-            rsl = "До скорой встречи.";
+        if ("РџРѕРєР°.".equals(question)) {
+            rsl = "Р”Рѕ СЃРєРѕСЂРѕР№ РІСЃС‚СЂРµС‡Рё.";
         }
         return rsl;
     }
 
     public static void main(String[] args) {
-        String rsl = DummyBot.answer("Привет, Бот.");
+        String rsl = DummyBot.answer("РџСЂРёРІРµС‚, Р‘РѕС‚.");
         System.out.println(rsl);
-        rsl = DummyBot.answer("Пока.");
+        rsl = DummyBot.answer("РџРѕРєР°.");
         System.out.println(rsl);
-        rsl = DummyBot.answer("Сколько будет 2 + 2?");
+        rsl = DummyBot.answer("РЎРєРѕР»СЊРєРѕ Р±СѓРґРµС‚ 2 + 2?");
         System.out.println(rsl);
     }
 }
