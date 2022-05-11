@@ -13,7 +13,12 @@ public class TriangleTest {
         Assert.assertTrue(result);
     }
 
-    public void whenNotExist(java.lang.String massage, boolean condition) {
-
+    @Test
+    public void whenNotExist() {
+        double ab = 2.0;
+        double ac = 2.0;
+        double bc = 5.0;
+        boolean result = Triangle.exist(ab, ac, bc);
+        Assert.assertFalse(result);
     }
 }
