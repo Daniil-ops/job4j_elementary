@@ -6,25 +6,25 @@ import org.junit.Test;
 public class DummyBotTest {
     @Test
     public void whenGreetBot() {
-        String in = "РџСЂРёРІРµС‚, Р‘РѕС‚.";
+        String in = "Привет, Бот.";
         String result = DummyBot.answer(in);
-        String expected = "РџСЂРёРІРµС‚, СѓРјРЅРёРє.";
+        String expected = "Привет, умник.";
         Assert.assertEquals(expected, result);
     }
 
     @Test
     public void whenByeBot() {
-        String in = "РџРѕРєР°.";
+        String in = "Пока.";
         String result = DummyBot.answer(in);
-        String expected = "Р”Рѕ СЃРєРѕСЂРѕР№ РІСЃС‚СЂРµС‡Рё.";
+        String expected = "До скорой встречи.";
         Assert.assertEquals(expected, result);
     }
 
     @Test
     public void whenUnknownBot() {
-        String in = "РЎРєРѕР»СЊРєРѕ Р±СѓРґРµС‚ 2 + 2?";
+        String in = "Сколько будет 2 + 2?";
         String result = DummyBot.answer(in);
-        String expected = "Р­С‚Рѕ СЃС‚Р°РІРёС‚ РјРµРЅСЏ РІ С‚СѓРїРёРє. Р—Р°РґР°Р№С‚Рµ РґСЂСѓРіРѕР№ РІРѕРїСЂРѕСЃ.";
+        String expected = "Это ставит меня в тупик. Задайте другой вопрос.";
         Assert.assertEquals(expected, result);
     }
 }
